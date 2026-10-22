@@ -1,0 +1,8 @@
+{
+  "name": "fh-static",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static snapshot of www.falirohouse.com; prebuilt files live in site/",
+  "scripts": { "build": "echo 'prebuilt static site in site/'" },
+  "engines": { "node": ">=18" }
+}
