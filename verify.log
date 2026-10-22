@@ -1,0 +1,21 @@
+{
+ "n_pages": 68,
+ "pages_with_issues": [],
+ "origin_hits": [],
+ "external": {
+  "www.googletagmanager.com": 68,
+  "connect.facebook.net": 68,
+  "analytics.google.com": 2,
+  "stats.g.doubleclick.net": 2,
+  "player.vimeo.com": 22,
+  "vimeo.com": 22,
+  "cdn.plyr.io": 22,
+  "f.vimeocdn.com": 10,
+  "i.vimeocdn.com": 10,
+  "skyfire.vimeocdn.com": 2,
+  "arclight.vimeo.com": 10,
+  "vod-adaptive-ak.vimeocdn.com": 8,
+  "maps.googleapis.com": 14
+ },
+ "local_fail": []
+}

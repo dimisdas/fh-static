@@ -1,0 +1,120 @@
+.video-intro,
+.video-outro {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  will-change: background-image;
+}
+.text-intro {
+  font-size: 2em;
+  padding: 1em 1rem 2em;
+}
+@media only screen and (min-width: 768px) {
+  .text-intro {
+    font-size: 3em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text-intro {
+    font-size: 4em;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .text-intro {
+    font-size: 5.5em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .text-intro {
+    padding: 1em 2em 2em;
+  }
+}
+.text-intro h2,
+.text-intro p {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+.text-intro .button {
+  margin-top: 4rem;
+}
+.film-incentives,
+.the-landscapes {
+  background-image: url(../../img/maps/attica.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  padding-top: 1em;
+  padding-bottom: 35%;
+}
+.film-incentives__inner,
+.the-landscapes__inner {
+  max-width: 900px;
+}
+@media only screen and (min-width: 768px) {
+  .film-incentives,
+  .the-landscapes {
+    padding-top: 2em;
+    padding-bottom: 20em;
+  }
+}
+.film-incentives h2,
+.the-landscapes h2 {
+  font-size: 1.5em;
+  margin: 0 0 1em;
+}
+@media only screen and (min-width: 768px) {
+  .film-incentives h2,
+  .the-landscapes h2 {
+    font-size: 1.75em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .film-incentives h2,
+  .the-landscapes h2 {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .film-incentives h2,
+  .the-landscapes h2 {
+    font-size: 2.5em;
+  }
+}
+.film-incentives h3,
+.the-landscapes h3 {
+  font-size: 1.5em;
+  margin: 0 0 1em;
+}
+.film-incentives p,
+.the-landscapes p {
+  font-size: 1.5em;
+  margin: 0 0 1.5em;
+}
+@media only screen and (min-width: 768px) {
+  .film-incentives p,
+  .the-landscapes p {
+    font-size: 1.75em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .film-incentives p,
+  .the-landscapes p {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .film-incentives p,
+  .the-landscapes p {
+    font-size: 2.5em;
+  }
+}
+.film-incentives .button,
+.the-landscapes .button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.the-landscapes {
+  background-image: url(../../img/maps/chalkidiki.svg);
+}

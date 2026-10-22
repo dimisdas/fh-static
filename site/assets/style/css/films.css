@@ -1,0 +1,106 @@
+.films {
+  margin-top: 8em;
+}
+@media only screen and (min-width: 768px) {
+  .films {
+    margin-top: 13em;
+  }
+}
+.films__film {
+  text-align: center;
+}
+.films__film__inner {
+  cursor: none;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.films__film__inner:hover {
+  opacity: 0.25;
+}
+.films__film__inner a {
+  cursor: none;
+}
+@media screen and (min-width: 768px) {
+	.films__film {
+		margin-top: 6.5%;
+		margin-bottom: 6.5%;
+	}
+  .films__film__inner {
+    display: inline-block;
+    width: 75%;
+  }
+  .films__film:nth-child(odd) .films__film__inner {
+  	margin-left: 16.666%;
+  	margin-right: 8.333%;
+  }
+  .films__film:nth-child(even) .films__film__inner {
+  	margin-left: 8.333%;
+  	margin-right: 16.666%;
+  }
+
+}
+@media screen and (min-width: 480px) {
+  .films__film__inner img {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    width: 100%;
+  }
+  .films__film__inner:hover img {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+}
+@media screen and (min-width: 480px){
+  .films__film {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 50%;
+            flex: 0 50%;
+  }
+}
+.films-secondary__inner{
+    position: relative;
+    margin: 20% 0;
+}
+.films-secondary__film{
+    font-size: 1.25em;
+}
+.films-secondary__film__title{
+    font-size: 1.25em;
+    display: inline-block;
+    margin: 0;
+}
+@media only screen and (min-width: 768px){
+    .films-secondary__film__title{
+        font-size: 2em;
+    }
+}
+.films-secondary__film__image{
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    position: absolute;
+    -webkit-transform: translate3d(0, -45%, 0);
+            transform: translate3d(0, -45%, 0);
+
+    -webkit-transition: opacity 0.4s ease-in, -webkit-transform 0.5s ease-out;
+    transition: opacity 0.4s ease-in, -webkit-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out, opacity 0.4s ease-in;
+    transition: transform 0.5s ease-out, opacity 0.4s ease-in, -webkit-transform 0.5s ease-out;
+    opacity: 0;
+    padding: 0 20%;
+}
+@media only screen and (min-width: 768px){
+    .films-secondary__film__image{
+        padding: 0 33.333%;
+    }
+}
+
+.films-secondary__film__title:hover + .films-secondary__film__image {
+  opacity: 1;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}

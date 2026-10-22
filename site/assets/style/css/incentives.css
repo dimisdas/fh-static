@@ -1,0 +1,74 @@
+.intro {
+  background-image: url(../../img/maps/corfu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about {
+  padding: 0 1rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 16rem;
+}
+.about .clear{
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .about {
+    padding: 2em 1rem;
+    font-size: 1.25em;
+  }
+}
+.about__item {
+  margin-top: 15.5%;
+}
+@media only screen and (min-width: 768px) {
+  .about__item {
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about__item {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .about__item {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about__item--last p {
+    margin-bottom: 15.5%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about__item--pre-last,
+  .about__item--last {
+    margin-top: 10em;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .about__item--pre-last {
+    margin-left: 33.33%;
+  }
+}
+.about__item--last .button {
+  margin-top: 1em;
+}
+.about__item--last .button:nth-last-of-type(2) {
+  margin-right: 1em;
+}
+.about__header {
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+.clouds {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.pre-footer{
+  margin-top: 0;
+}

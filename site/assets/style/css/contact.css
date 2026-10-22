@@ -1,0 +1,14 @@
+.intro {
+  background: #F6EFE2;
+}
+.intro p {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.intro p a {
+  color: #0a1622;
+  white-space: nowrap;
+}
+.intro p:hover {
+  color: rgba(10, 22, 34, 0.1);
+}

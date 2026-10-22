@@ -1,0 +1,98 @@
+.intro {
+  background-image: url(../../img/maps/peloponnese.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.locations {
+  margin-bottom: 25%;
+  position: relative;
+}
+.locations:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.locations__row {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .locations__row {
+    font-size: 3em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .locations__row {
+    font-size: 4em;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .locations__row {
+    font-size: 5.5em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .locations__row {
+    position: static;
+  }
+}
+.locations__row .helper {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .locations__row .helper {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate3d(110%, 0, 0);
+            transform: translate3d(110%, 0, 0);
+  }
+}
+.locations__row .readmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: pre-wrap;
+  font-size: 0.25em;
+  margin-top: 1em;
+  line-height: 1;
+}
+.locations__row .readmore span {
+  position: relative;
+}
+.locations__row .readmore.updating span {
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+}
+.locations__name {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+.locations__image {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  font-size: 0.25em;
+  -webkit-transition: opacity 0.4s ease-in, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.4s ease-in, -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.4s ease-in;
+  transition: transform 0.5s ease-out, opacity 0.4s ease-in, -webkit-transform 0.5s ease-out;
+  opacity: 0;
+}
+.locations__image img {
+  margin: 0 auto;
+  max-width: 80%;
+}
+.locations .locations__name:hover + .locations__image {
+  opacity: 1;
+  -webkit-transform: translate3d(0, -50px, 0);
+          transform: translate3d(0, -50px, 0);
+}
